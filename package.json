@@ -5,7 +5,8 @@
   "scripts": {
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "tslint .",
+    "precommit": "lint-staged"
   },
   "dependencies": {
     "react": "16.8.6",
@@ -21,12 +22,25 @@
     "@types/react-test-renderer": "^16.9.0",
     "babel-jest": "^24.9.0",
     "eslint": "^6.4.0",
+    "husky": "^3.0.5",
     "jest": "^24.9.0",
+    "lint-staged": "^9.2.5",
     "metro-react-native-babel-preset": "^0.56.0",
+    "prettier": "^1.18.2",
     "react-test-renderer": "16.8.6",
+    "tslint": "^5.20.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^4.1.0",
     "typescript": "^3.6.3"
   },
   "jest": {
     "preset": "react-native"
+  },
+  "lint-staged": {
+    "{src,test}/**/*.ts*": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
