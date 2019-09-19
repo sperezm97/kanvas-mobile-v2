@@ -8,8 +8,8 @@ export const Auth = () => {
         children: [
           {
             component: {
-              id: screeNames.WELCOME_SCREEN,
-              name: screeNames.WELCOME_SCREEN,
+              id: screeNames.HOME_SCREEN,
+              name: screeNames.HOME_SCREEN,
             },
           },
         ],
