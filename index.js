@@ -1,14 +1,10 @@
 import { Navigation } from 'react-native-navigation';
-import App from './App';
+import registerScreens from '@config/navigation/registerScreens';
+import { Auth, defaultConfig } from '@config/navigation/behaviors';
 
-Navigation.registerComponent(`navigation.playground.WelcomeScreen`, () => App);
+registerScreens();
 
 Navigation.events().registerAppLaunchedListener(() => {
-  Navigation.setRoot({
-    root: {
-      component: {
-        name: 'navigation.playground.WelcomeScreen',
-      },
-    },
-  });
+  defaultConfig();
+  Auth();
 });
