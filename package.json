@@ -10,6 +10,7 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.6.1",
     "@redux-offline/redux-offline": "^2.5.2-native.1",
     "native-base": "^2.13.8",
     "react": "16.8.6",

@@ -1,7 +1,15 @@
 import { createStore, applyMiddleware, compose } from 'redux';
-import RootReducer, { AppState } from './RootReducer';
+import { persistStore, persistReducer } from 'redux-persist';
+import AsyncStorage from '@react-native-community/async-storage';
 import logger from 'redux-logger';
 import { composeWithDevTools } from 'redux-devtools-extension';
+
+import RootReducer, { AppState } from './RootReducer';
+
+const persistConfig = {
+  key: 'root',
+  storage: AsyncStorage,
+};
 
 export default function getStore(): any {
   const middlewares = [logger];
@@ -9,7 +17,10 @@ export default function getStore(): any {
   const enchanters = applyMiddleware(...middlewares);
   const composed = composeWithDevTools(enchanters);
 
-  const store = createStore(RootReducer, undefined, composed);
+  const persistedReducer = persistReducer(persistConfig, RootReducer);
 
-  return store;
+  const store = createStore(persistedReducer, undefined, composed);
+  const persistor = persistStore(store);
+
+  return { store, persistor };
 }
