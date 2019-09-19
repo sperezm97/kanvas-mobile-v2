@@ -7,7 +7,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { createOffline } from '@redux-offline/redux-offline';
 import offlineConfig from '@redux-offline/redux-offline/lib/defaults/index';
 import createSagaMiddleware from 'redux-saga';
-import helloSaga from './sagas';
+import { helloSaga } from './sagas';
 
 import RootReducer, { AppState } from './RootReducer';
 
