@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.1",
+    "@react-native-community/netinfo": "^4.2.2",
     "@redux-offline/redux-offline": "^2.5.2-native.1",
     "native-base": "^2.13.8",
     "react": "16.8.6",

@@ -4,6 +4,9 @@ import AsyncStorage from '@react-native-community/async-storage';
 import logger from 'redux-logger';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
+import { createOffline } from '@redux-offline/redux-offline';
+import offlineConfig from '@redux-offline/redux-offline/lib/defaults/index';
+
 import RootReducer, { AppState } from './RootReducer';
 
 const persistConfig = {
@@ -12,14 +15,28 @@ const persistConfig = {
 };
 
 export default function getStore(): any {
-  const middlewares = [logger];
+  const {
+    middleware: offlineMiddleware,
+    enhanceReducer: offlineEnhanceReducer,
+    enhanceStore: offlineEnhanceStore,
+  } = createOffline({
+    ...offlineConfig,
+    persist: false,
+  });
 
-  const enchanters = applyMiddleware(...middlewares);
-  const composed = composeWithDevTools(enchanters);
+  const middlewares = [logger, offlineMiddleware];
+  const composed = composeWithDevTools(
+    offlineEnhanceStore,
+    applyMiddleware(...middlewares),
+  );
 
-  const persistedReducer = persistReducer(persistConfig, RootReducer);
+  const persistedReducer = persistReducer(
+    persistConfig,
+    offlineEnhanceReducer(RootReducer),
+  );
 
-  const store = createStore(persistedReducer, undefined, composed);
+  const store = createStore(persistedReducer, composed);
+
   const persistor = persistStore(store);
 
   return { store, persistor };
