@@ -6,6 +6,8 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 import { createOffline } from '@redux-offline/redux-offline';
 import offlineConfig from '@redux-offline/redux-offline/lib/defaults/index';
+import createSagaMiddleware from 'redux-saga';
+import helloSaga from './sagas';
 
 import RootReducer, { AppState } from './RootReducer';
 
@@ -23,8 +25,9 @@ export default function getStore(): any {
     ...offlineConfig,
     persist: false,
   });
+  const sagasMiddleware = createSagaMiddleware();
 
-  const middlewares = [logger, offlineMiddleware];
+  const middlewares = [logger, offlineMiddleware, sagasMiddleware];
   const composed = composeWithDevTools(
     offlineEnhanceStore,
     applyMiddleware(...middlewares),
@@ -36,6 +39,7 @@ export default function getStore(): any {
   );
 
   const store = createStore(persistedReducer, composed);
+  sagasMiddleware.run(helloSaga);
 
   const persistor = persistStore(store);
 
