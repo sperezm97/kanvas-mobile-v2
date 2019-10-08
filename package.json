@@ -5,9 +5,8 @@
   "scripts": {
     "start": "react-native start",
     "test": "jest",
-    "lint": "tslint .",
-    "lint:css": "stylelint './src/**/*.tsx'",
-    "precommit": "lint-staged"
+    "lint": "tslint ./src/**/*.{ts,tsx}",
+    "lint:css": "stylelint './src/**/*.tsx'"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.1",
@@ -24,6 +23,7 @@
     "react-redux": "^7.1.1",
     "redux": "^4.0.4",
     "redux-logger": "^3.0.6",
+    "redux-offline": "^2.0.0",
     "redux-persist": "^6.0.0",
     "redux-saga": "^1.1.1",
     "styled-components": "^4.3.2",
@@ -59,6 +59,7 @@
     "tslint-config-airbnb": "^5.11.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-react": "^4.1.0",
+    "tslint-react-hooks": "^2.2.1",
     "typescript": "^3.6.3"
   },
   "jest": {
