@@ -3,11 +3,15 @@
     "tslint:recommended",
     "tslint-config-prettier",
     "tslint-config-airbnb",
-    "tslint-react"
+    "tslint-react",
+    "tslint-react-hooks",
+    "tslint-react-native"
   ],
   "defaultSeverity": "error",
   "jsRules": {},
   "rules": {
+    "no-unused-styles": true,
+    "react-hooks-nesting": "error",
     "import-name": false,
     "quotemark": [true, "single", "jsx-double"],
     "ordered-imports": false,
