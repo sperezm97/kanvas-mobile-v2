@@ -1,7 +1,6 @@
 import axios, { AxiosRequestConfig, AxiosResponse, AxiosError } from 'axios';
 import { API_URL } from 'react-native-dotenv';
 import { formatRequest } from '../utils/formats';
-import has from 'lodash/has';
 import { Auth } from './navigation/behaviors';
 
 const instance = axios.create({
