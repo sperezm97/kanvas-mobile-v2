@@ -33,7 +33,7 @@ export const defaultConfig = () => {
     popGesture: true,
     // backgroundImage: null,
     // rootBackgroundImage: null,
-    modalPresentationStyle: 'fullScreen', // Supported styles are: 'formSheet', 'pageSheet', 'overFullScreen', 'overCurrentContext', 'currentContext', 'popover', 'fullScreen' and 'none'. On Android, only overCurrentContext and none are supported.
+    modalPresentationStyle: 'overFullScreen', // Supported styles are: 'formSheet', 'pageSheet', 'overFullScreen', 'overCurrentContext', 'currentContext', 'popover', 'fullScreen' and 'none'. On Android, only overCurrentContext and none are supported.
     topBar: {
       visible: false,
     },
@@ -121,7 +121,7 @@ export function popToScreen(componentId: string, mergeOptions?: Options) {
 /**
  * Pop all the screens until the root from this screen's navigation stack.
  * @param componentId Screen name
- * @param mergeOptions Stylign options
+ * @param mergeOptions Styling options
  */
 export function popToRoot(componentId: string, mergeOptions?: Options) {
   Navigation.popToRoot(componentId, mergeOptions);
@@ -180,7 +180,6 @@ export function showModal(
               ...options,
               topBar: {
                 visible: false,
-                height: 0,
               },
               bottomTabs: {
                 visible: false,
@@ -215,5 +214,5 @@ export function dismissAllModals(mergeOptions?: Options) {
  * @param mergeOptions options to style
  */
 export function mergeOptions(componentId: string, options?: Options) {
-  Navigation.mergeOptions(componentId, options);
+  Navigation.mergeOptions(componentId, options || {});
 }
