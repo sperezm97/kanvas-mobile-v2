@@ -8,4 +8,4 @@ export interface ChangeScreenAction {
   payload: Session;
 }
 
-export type SessionActionTypes = ChangeScreenAction; // use "\" to add news actions;
+export type SessionActionTypes = ChangeScreenAction; // use "|" to add news actions;
