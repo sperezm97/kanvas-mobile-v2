@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "insights.app"
-               BlueprintName = "insights"
-               ReferencedContainer = "container:insights.xcodeproj">
+               BuildableName = "Kanvas.app"
+               BlueprintName = "Kanvas"
+               ReferencedContainer = "container:Kanvas.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "insightsTests.xctest"
-               BlueprintName = "insightsTests"
-               ReferencedContainer = "container:insights.xcodeproj">
+               BuildableName = "KanvasTests.xctest"
+               BlueprintName = "KanvasTests"
+               ReferencedContainer = "container:Kanvas.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "insightsTests.xctest"
-               BlueprintName = "insightsTests"
-               ReferencedContainer = "container:insights.xcodeproj">
+               BuildableName = "KanvasTests.xctest"
+               BlueprintName = "KanvasTests"
+               ReferencedContainer = "container:Kanvas.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "insights.app"
-            BlueprintName = "insights"
-            ReferencedContainer = "container:insights.xcodeproj">
+            BuildableName = "Kanvas.app"
+            BlueprintName = "Kanvas"
+            ReferencedContainer = "container:Kanvas.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "insights.app"
-            BlueprintName = "insights"
-            ReferencedContainer = "container:insights.xcodeproj">
+            BuildableName = "Kanvas.app"
+            BlueprintName = "Kanvas"
+            ReferencedContainer = "container:Kanvas.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "insights.app"
-            BlueprintName = "insights"
-            ReferencedContainer = "container:insights.xcodeproj">
+            BuildableName = "Kanvas.app"
+            BlueprintName = "Kanvas"
+            ReferencedContainer = "container:Kanvas.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

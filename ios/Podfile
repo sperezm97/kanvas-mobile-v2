@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'insights' do
-  # Pods for insights
+target 'Kanvas' do
+  # Pods for Kanvas
   pod 'React', :path => '../node_modules/react-native/'
   pod 'React-Core', :path => '../node_modules/react-native/React'
   pod 'React-DevSupport', :path => '../node_modules/react-native/React'
@@ -28,7 +28,7 @@ target 'insights' do
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
   
-  target 'insightsTests' do
+  target 'KanvasTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -36,10 +36,10 @@ target 'insights' do
   use_native_modules!
 end
 
-target 'insights-tvOS' do
-  # Pods for insights-tvOS
+target 'Kanvas-tvOS' do
+  # Pods for Kanvas-tvOS
 
-  target 'insights-tvOSTests' do
+  target 'Kanvas-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

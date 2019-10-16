@@ -1,4 +1,4 @@
-package com.insights;
+package com.kanvas;
 
 import com.reactnativenavigation.NavigationActivity;
 

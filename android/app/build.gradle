@@ -128,7 +128,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.insights"
+        applicationId "com.kanvas"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         missingDimensionStrategy "RNN.reactNativeVersion", "reactNative60"

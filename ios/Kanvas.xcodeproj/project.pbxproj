@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* insightsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* insightsTests.m */; };
+		00E356F31AD99517003FC87E /* KanvasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* KanvasTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -15,11 +15,11 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* insightsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* insightsTests.m */; };
-		739DDC89BAD79A67936AACED /* libPods-insights-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F6994DEAF5753AD71C03E9 /* libPods-insights-tvOSTests.a */; };
-		823A7D8830F4C2AA17AFECC0 /* libPods-insights.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DFA3C1CBDD8C9A395E6329 /* libPods-insights.a */; };
-		C72277DAAF2D9D4AD2866DB8 /* libPods-insightsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4645F647AC84EBB4AF061526 /* libPods-insightsTests.a */; };
-		CD13B5D026A87B333326ECA3 /* libPods-insights-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1D3974E73D86C2063F1BDA /* libPods-insights-tvOS.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* KanvasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* KanvasTests.m */; };
+		739DDC89BAD79A67936AACED /* libPods-Kanvas-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F6994DEAF5753AD71C03E9 /* libPods-Kanvas-tvOSTests.a */; };
+		823A7D8830F4C2AA17AFECC0 /* libPods-Kanvas.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DFA3C1CBDD8C9A395E6329 /* libPods-Kanvas.a */; };
+		C72277DAAF2D9D4AD2866DB8 /* libPods-KanvasTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4645F647AC84EBB4AF061526 /* libPods-KanvasTests.a */; };
+		CD13B5D026A87B333326ECA3 /* libPods-Kanvas-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1D3974E73D86C2063F1BDA /* libPods-Kanvas-tvOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,45 +28,45 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = insights;
+			remoteInfo = Kanvas;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "insights-tvOS";
+			remoteInfo = "Kanvas-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* insightsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = insightsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* KanvasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KanvasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* insightsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = insightsTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* insights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = insights.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = insights/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = insights/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* KanvasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KanvasTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Kanvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kanvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Kanvas/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Kanvas/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = insights/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = insights/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = insights/main.m; sourceTree = "<group>"; };
-		1D1D3974E73D86C2063F1BDA /* libPods-insights-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-insights-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A05DAC41A8518ED9F774FE5 /* Pods-insights-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insights-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-insights-tvOSTests/Pods-insights-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* insights-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "insights-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* insights-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "insights-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		37EAE361F220927563BDFDF9 /* Pods-insights-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insights-tvOS.release.xcconfig"; path = "Target Support Files/Pods-insights-tvOS/Pods-insights-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		4645F647AC84EBB4AF061526 /* libPods-insightsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-insightsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BE449E55BD8535F57CC8B7A /* Pods-insights.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insights.release.xcconfig"; path = "Target Support Files/Pods-insights/Pods-insights.release.xcconfig"; sourceTree = "<group>"; };
-		5D4639AFD6EABA3B2243267C /* Pods-insights-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insights-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-insights-tvOSTests/Pods-insights-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		73B84F5E87EBE546C952D857 /* Pods-insights-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insights-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-insights-tvOS/Pods-insights-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		78F6994DEAF5753AD71C03E9 /* libPods-insights-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-insights-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0C5733BFB5C542E531A50CD /* Pods-insights.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insights.debug.xcconfig"; path = "Target Support Files/Pods-insights/Pods-insights.debug.xcconfig"; sourceTree = "<group>"; };
-		B3DFA3C1CBDD8C9A395E6329 /* libPods-insights.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-insights.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFC51F66DBB50588244B7C2A /* Pods-insightsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insightsTests.debug.xcconfig"; path = "Target Support Files/Pods-insightsTests/Pods-insightsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Kanvas/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Kanvas/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Kanvas/main.m; sourceTree = "<group>"; };
+		1D1D3974E73D86C2063F1BDA /* libPods-Kanvas-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kanvas-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A05DAC41A8518ED9F774FE5 /* Pods-Kanvas-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanvas-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Kanvas-tvOSTests/Pods-Kanvas-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* Kanvas-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kanvas-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* Kanvas-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kanvas-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37EAE361F220927563BDFDF9 /* Pods-Kanvas-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanvas-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Kanvas-tvOS/Pods-Kanvas-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		4645F647AC84EBB4AF061526 /* libPods-KanvasTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KanvasTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE449E55BD8535F57CC8B7A /* Pods-Kanvas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanvas.release.xcconfig"; path = "Target Support Files/Pods-Kanvas/Pods-Kanvas.release.xcconfig"; sourceTree = "<group>"; };
+		5D4639AFD6EABA3B2243267C /* Pods-Kanvas-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanvas-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Kanvas-tvOSTests/Pods-Kanvas-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		73B84F5E87EBE546C952D857 /* Pods-Kanvas-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanvas-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Kanvas-tvOS/Pods-Kanvas-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		78F6994DEAF5753AD71C03E9 /* libPods-Kanvas-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kanvas-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C5733BFB5C542E531A50CD /* Pods-Kanvas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kanvas.debug.xcconfig"; path = "Target Support Files/Pods-Kanvas/Pods-Kanvas.debug.xcconfig"; sourceTree = "<group>"; };
+		B3DFA3C1CBDD8C9A395E6329 /* libPods-Kanvas.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kanvas.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFC51F66DBB50588244B7C2A /* Pods-KanvasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanvasTests.debug.xcconfig"; path = "Target Support Files/Pods-KanvasTests/Pods-KanvasTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F7E893512FEEDD24798EE93C /* Pods-insightsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insightsTests.release.xcconfig"; path = "Target Support Files/Pods-insightsTests/Pods-insightsTests.release.xcconfig"; sourceTree = "<group>"; };
+		F7E893512FEEDD24798EE93C /* Pods-KanvasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanvasTests.release.xcconfig"; path = "Target Support Files/Pods-KanvasTests/Pods-KanvasTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C72277DAAF2D9D4AD2866DB8 /* libPods-insightsTests.a in Frameworks */,
+				C72277DAAF2D9D4AD2866DB8 /* libPods-KanvasTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				823A7D8830F4C2AA17AFECC0 /* libPods-insights.a in Frameworks */,
+				823A7D8830F4C2AA17AFECC0 /* libPods-Kanvas.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD13B5D026A87B333326ECA3 /* libPods-insights-tvOS.a in Frameworks */,
+				CD13B5D026A87B333326ECA3 /* libPods-Kanvas-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,20 +98,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				739DDC89BAD79A67936AACED /* libPods-insights-tvOSTests.a in Frameworks */,
+				739DDC89BAD79A67936AACED /* libPods-Kanvas-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* insightsTests */ = {
+		00E356EF1AD99517003FC87E /* KanvasTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* insightsTests.m */,
+				00E356F21AD99517003FC87E /* KanvasTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = insightsTests;
+			path = KanvasTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -122,7 +122,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* insights */ = {
+		13B07FAE1A68108700A75B9A /* Kanvas */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -133,20 +133,20 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = insights;
+			name = Kanvas;
 			sourceTree = "<group>";
 		};
 		235A574F35C5240E6402D4B3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A0C5733BFB5C542E531A50CD /* Pods-insights.debug.xcconfig */,
-				5BE449E55BD8535F57CC8B7A /* Pods-insights.release.xcconfig */,
-				73B84F5E87EBE546C952D857 /* Pods-insights-tvOS.debug.xcconfig */,
-				37EAE361F220927563BDFDF9 /* Pods-insights-tvOS.release.xcconfig */,
-				5D4639AFD6EABA3B2243267C /* Pods-insights-tvOSTests.debug.xcconfig */,
-				2A05DAC41A8518ED9F774FE5 /* Pods-insights-tvOSTests.release.xcconfig */,
-				DFC51F66DBB50588244B7C2A /* Pods-insightsTests.debug.xcconfig */,
-				F7E893512FEEDD24798EE93C /* Pods-insightsTests.release.xcconfig */,
+				A0C5733BFB5C542E531A50CD /* Pods-Kanvas.debug.xcconfig */,
+				5BE449E55BD8535F57CC8B7A /* Pods-Kanvas.release.xcconfig */,
+				73B84F5E87EBE546C952D857 /* Pods-Kanvas-tvOS.debug.xcconfig */,
+				37EAE361F220927563BDFDF9 /* Pods-Kanvas-tvOS.release.xcconfig */,
+				5D4639AFD6EABA3B2243267C /* Pods-Kanvas-tvOSTests.debug.xcconfig */,
+				2A05DAC41A8518ED9F774FE5 /* Pods-Kanvas-tvOSTests.release.xcconfig */,
+				DFC51F66DBB50588244B7C2A /* Pods-KanvasTests.debug.xcconfig */,
+				F7E893512FEEDD24798EE93C /* Pods-KanvasTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -157,10 +157,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				B3DFA3C1CBDD8C9A395E6329 /* libPods-insights.a */,
-				1D1D3974E73D86C2063F1BDA /* libPods-insights-tvOS.a */,
-				78F6994DEAF5753AD71C03E9 /* libPods-insights-tvOSTests.a */,
-				4645F647AC84EBB4AF061526 /* libPods-insightsTests.a */,
+				B3DFA3C1CBDD8C9A395E6329 /* libPods-Kanvas.a */,
+				1D1D3974E73D86C2063F1BDA /* libPods-Kanvas-tvOS.a */,
+				78F6994DEAF5753AD71C03E9 /* libPods-Kanvas-tvOSTests.a */,
+				4645F647AC84EBB4AF061526 /* libPods-KanvasTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,9 +175,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* insights */,
+				13B07FAE1A68108700A75B9A /* Kanvas */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* insightsTests */,
+				00E356EF1AD99517003FC87E /* KanvasTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				235A574F35C5240E6402D4B3 /* Pods */,
@@ -190,10 +190,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* insights.app */,
-				00E356EE1AD99517003FC87E /* insightsTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* insights-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* insights-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Kanvas.app */,
+				00E356EE1AD99517003FC87E /* KanvasTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* Kanvas-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* Kanvas-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,9 +201,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* insightsTests */ = {
+		00E356ED1AD99517003FC87E /* KanvasTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "insightsTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "KanvasTests" */;
 			buildPhases = (
 				835BA9D114FC489CC817A854 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -215,14 +215,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = insightsTests;
-			productName = insightsTests;
-			productReference = 00E356EE1AD99517003FC87E /* insightsTests.xctest */;
+			name = KanvasTests;
+			productName = KanvasTests;
+			productReference = 00E356EE1AD99517003FC87E /* KanvasTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* insights */ = {
+		13B07F861A680F5B00A75B9A /* Kanvas */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "insights" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Kanvas" */;
 			buildPhases = (
 				370B4DC81326BE4A987C1193 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -235,14 +235,14 @@
 			);
 			dependencies = (
 			);
-			name = insights;
-			productName = insights;
-			productReference = 13B07F961A680F5B00A75B9A /* insights.app */;
+			name = Kanvas;
+			productName = Kanvas;
+			productReference = 13B07F961A680F5B00A75B9A /* Kanvas.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* insights-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* Kanvas-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "insights-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Kanvas-tvOS" */;
 			buildPhases = (
 				72AEA20B60DE103E1FBA9DB8 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -255,14 +255,14 @@
 			);
 			dependencies = (
 			);
-			name = "insights-tvOS";
-			productName = "insights-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* insights-tvOS.app */;
+			name = "Kanvas-tvOS";
+			productName = "Kanvas-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* Kanvas-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* insights-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* Kanvas-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "insights-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Kanvas-tvOSTests" */;
 			buildPhases = (
 				8A426932353DFE63C6396A92 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -274,9 +274,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "insights-tvOSTests";
-			productName = "insights-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* insights-tvOSTests.xctest */;
+			name = "Kanvas-tvOSTests";
+			productName = "Kanvas-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* Kanvas-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -303,7 +303,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "insights" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Kanvas" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -316,10 +316,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* insights */,
-				00E356ED1AD99517003FC87E /* insightsTests */,
-				2D02E47A1E0B4A5D006451C7 /* insights-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* insights-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* Kanvas */,
+				00E356ED1AD99517003FC87E /* KanvasTests */,
+				2D02E47A1E0B4A5D006451C7 /* Kanvas-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* Kanvas-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -402,7 +402,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-insights-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Kanvas-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -424,7 +424,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-insights-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Kanvas-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -446,7 +446,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-insightsTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-KanvasTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -468,7 +468,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-insights-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Kanvas-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -520,7 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* insightsTests.m in Sources */,
+				00E356F31AD99517003FC87E /* KanvasTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +546,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* insightsTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* KanvasTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,12 +555,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* insights */;
+			target = 13B07F861A680F5B00A75B9A /* Kanvas */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* insights-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* Kanvas-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -572,7 +572,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = insights;
+			path = Kanvas;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -580,14 +580,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFC51F66DBB50588244B7C2A /* Pods-insightsTests.debug.xcconfig */;
+			baseConfigurationReference = DFC51F66DBB50588244B7C2A /* Pods-KanvasTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = insightsTests/Info.plist;
+				INFOPLIST_FILE = KanvasTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -597,17 +597,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/insights.app/insights";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kanvas.app/Kanvas";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7E893512FEEDD24798EE93C /* Pods-insightsTests.release.xcconfig */;
+			baseConfigurationReference = F7E893512FEEDD24798EE93C /* Pods-KanvasTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = insightsTests/Info.plist;
+				INFOPLIST_FILE = KanvasTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -617,18 +617,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/insights.app/insights";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kanvas.app/Kanvas";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0C5733BFB5C542E531A50CD /* Pods-insights.debug.xcconfig */;
+			baseConfigurationReference = A0C5733BFB5C542E531A50CD /* Pods-Kanvas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				INFOPLIST_FILE = insights/Info.plist;
+				INFOPLIST_FILE = Kanvas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -636,18 +636,18 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = insights;
+				PRODUCT_NAME = Kanvas;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BE449E55BD8535F57CC8B7A /* Pods-insights.release.xcconfig */;
+			baseConfigurationReference = 5BE449E55BD8535F57CC8B7A /* Pods-Kanvas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = insights/Info.plist;
+				INFOPLIST_FILE = Kanvas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -655,14 +655,14 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = insights;
+				PRODUCT_NAME = Kanvas;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73B84F5E87EBE546C952D857 /* Pods-insights-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 73B84F5E87EBE546C952D857 /* Pods-Kanvas-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -673,14 +673,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "insights-tvOS/Info.plist";
+				INFOPLIST_FILE = "Kanvas-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.insights-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Kanvas-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -690,7 +690,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37EAE361F220927563BDFDF9 /* Pods-insights-tvOS.release.xcconfig */;
+			baseConfigurationReference = 37EAE361F220927563BDFDF9 /* Pods-Kanvas-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -701,14 +701,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "insights-tvOS/Info.plist";
+				INFOPLIST_FILE = "Kanvas-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.insights-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Kanvas-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -718,7 +718,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D4639AFD6EABA3B2243267C /* Pods-insights-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 5D4639AFD6EABA3B2243267C /* Pods-Kanvas-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -728,24 +728,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "insights-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Kanvas-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.insights-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Kanvas-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/insights-tvOS.app/insights-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kanvas-tvOS.app/Kanvas-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A05DAC41A8518ED9F774FE5 /* Pods-insights-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 2A05DAC41A8518ED9F774FE5 /* Pods-Kanvas-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -755,17 +755,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "insights-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Kanvas-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.insights-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Kanvas-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/insights-tvOS.app/insights-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kanvas-tvOS.app/Kanvas-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -872,7 +872,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "insightsTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "KanvasTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -881,7 +881,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "insights" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Kanvas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -890,7 +890,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "insights-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Kanvas-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -899,7 +899,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "insights-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Kanvas-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -908,7 +908,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "insights" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Kanvas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
