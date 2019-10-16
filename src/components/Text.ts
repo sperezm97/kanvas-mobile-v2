@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import is from 'styled-is';
-import { Text as LLText } from 'native-base';
+import { Text as nbText } from 'native-base';
 import { fonts } from '../styles/fonts';
 
-export const Text = styled(LLText)`
+export const Text = styled(nbText)`
 
   ${is('headLine')`
     font-size: ${fonts.headline.fontSize}px;
