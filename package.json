@@ -5,8 +5,8 @@
   "scripts": {
     "start": "react-native start",
     "test": "jest",
-    "lint": "tslint ./src/**/*.{ts,tsx}",
-    "lint:css": "stylelint './src/**/*.tsx'"
+    "lint:js": "tslint ./src/**/*.{ts,tsx}",
+    "lint:css": "stylelint './src/**/*.{ts,tsx}'"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.1",
@@ -60,6 +60,7 @@
     "tslint-config-prettier": "^1.18.0",
     "tslint-react": "^4.1.0",
     "tslint-react-hooks": "^2.2.1",
+    "tslint-react-native": "0.0.7",
     "typescript": "^3.6.3"
   },
   "jest": {
@@ -81,9 +82,16 @@
     "cacheDirectory": ".jest/cache"
   },
   "lint-staged": {
-    "{src,test}/**/*.ts*": [
-      "prettier --write",
+    "{src,test}/**/*.{ts,tsx}": [
+      "npm run lint:js",
+      "npm run lint:css",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
+    }
   }
 }
