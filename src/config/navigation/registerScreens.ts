@@ -1,8 +1,18 @@
 import { Navigation } from 'react-native-navigation';
-import Home from '@modules/Home';
-import * as screens from './screenNames';
-import withProvider from '@utils/hoc/withProvider';
+import { compose } from 'redux';
+import * as screen from '@modules';
+import * as screenNames from './screenNames';
+import { withRedux, withNotification, withSafeArea } from '@utils/hoc';
+
+const enchanter = (screen: string) =>
+  compose(
+    withRedux,
+    withNotification,
+    withSafeArea,
+  )(screen);
 
 export default function registerScreens(): void {
-  Navigation.registerComponent(screens.HOME_SCREEN, () => withProvider(Home));
+  Navigation.registerComponent(screenNames.HOME_SCREEN, () =>
+    enchanter(screen.Home),
+  );
 }
