@@ -7,9 +7,9 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { createOffline } from '@redux-offline/redux-offline';
 import offlineConfig from '@redux-offline/redux-offline/lib/defaults/index';
 import createSagaMiddleware from 'redux-saga';
-import { helloSaga } from './sagas';
 
-import RootReducer, { AppState } from './RootReducer';
+import RootReducer, { AppState } from './rootReducer';
+import rootWatch from './rootSagas';
 
 const persistConfig = {
   key: 'root',
@@ -38,7 +38,7 @@ const persistedReducer = persistReducer(
 );
 
 const store = createStore(persistedReducer, composed);
-sagasMiddleware.run(helloSaga);
+sagasMiddleware.run(rootWatch);
 
 const persistor = persistStore(store);
 

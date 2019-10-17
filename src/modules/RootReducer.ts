@@ -1,9 +1,6 @@
 import { combineReducers } from 'redux';
-import Session from './Session';
 
-const RootReducer = combineReducers({
-  session: Session,
-});
+const RootReducer = combineReducers({});
 
 export type AppState = ReturnType<typeof RootReducer>;
 export default RootReducer;
