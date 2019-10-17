@@ -4,7 +4,7 @@ import { Text } from '@compontents/Text';
 const Login = () => {
   return (
     <View>
-      <Text headLine>Login</Text>
+      <Text>Login</Text>
     </View>
   );
 };
