@@ -1,11 +1,10 @@
 {
   "extends": [
-    "tslint:recommended",
-    "tslint-config-prettier",
-    "tslint-config-airbnb",
     "tslint-react",
     "tslint-react-hooks",
-    "tslint-react-native"
+    "tslint-react-native",
+    "tslint-config-prettier",
+    "tslint-config-airbnb"
   ],
   "defaultSeverity": "error",
   "jsRules": {},
