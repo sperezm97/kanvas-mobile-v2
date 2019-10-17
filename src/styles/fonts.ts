@@ -1,8 +1,19 @@
-import { colors } from './colors';
+import colors from './colors';
 
 ////////////////////////////////////////////////////////
 //                   GLOBAL FONTS                    //
 //////////////////////////////////////////////////////
+
+export const sizes = {
+  headline: 40,
+  title: 30,
+  subHeader: 18,
+  quote: 20,
+  roughBody: 14,
+  body: 14,
+  smallBody: 12,
+  footnote: 10,
+};
 
 export const fonts = {
   headline: {

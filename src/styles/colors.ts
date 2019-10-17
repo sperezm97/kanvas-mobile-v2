@@ -2,7 +2,7 @@
 //                   GLOBAL COLOS                    //
 //////////////////////////////////////////////////////
 
-export const colors = {
+const colors = {
   // global colors
   white: '#fff',
   grey: '#8F8F8F',
@@ -28,3 +28,5 @@ export const colors = {
   midGrey: '#7F7F7F',
   blackBrand: '#5A5A5A',
 };
+
+export default colors;
