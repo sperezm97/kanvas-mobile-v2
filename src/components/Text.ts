@@ -3,7 +3,7 @@ import is from 'styled-is';
 import { Text as nbText } from 'native-base';
 import { fonts } from '../styles/fonts';
 
-export const Text = styled(nbText)`
+const Text = styled(nbText)`
 
   ${is('headLine')`
     font-size: ${fonts.headline.fontSize}px;
@@ -61,3 +61,4 @@ export const Text = styled(nbText)`
   color: ${fonts.button.color}`}
 
 `;
+export default Text;

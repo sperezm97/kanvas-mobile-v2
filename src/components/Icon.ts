@@ -3,7 +3,7 @@ import is from 'styled-is';
 import { Icon as lbIcon } from 'native-base';
 import { fonts } from '../styles/fonts';
 
-export const Icon = styled(lbIcon)`
+const Icon = styled(lbIcon)`
   ${is('tilte')`
   font-size: ${fonts.quickActions.fontSize}px;
   color: ${fonts.quickActions.color}
@@ -14,3 +14,4 @@ export const Icon = styled(lbIcon)`
     color: ${fonts.icon.color}
   `}
 `;
+export default Icon;

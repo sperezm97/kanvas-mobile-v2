@@ -19,14 +19,14 @@ const Right = styled(nbRight)`
   flex: 1 0px;
 `;
 
-interface ITitleBar {
+interface ItitleBar {
   right?: JSX.Element;
   body?: JSX.Element;
   left?: JSX.Element;
   barStyle?: 'light-content' | 'dark-content';
   noShadow?: boolean;
 }
-const TitleBar = ({ right, body, left, barStyle, noShadow }: ITitleBar) => {
+const TitleBar = ({ right, body, left, barStyle, noShadow }: ItitleBar) => {
   return (
     <Header iosBarStyle={barStyle} noShadow={noShadow}>
       <Right>{right}</Right>
@@ -43,4 +43,5 @@ TitleBar.defaultsProps = {
   barStyle: 'light-content',
   noShadow: false,
 };
+
 export default TitleBar;
