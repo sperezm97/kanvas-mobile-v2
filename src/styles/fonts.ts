@@ -22,9 +22,9 @@ export const fonts = {
     color: colors.blackBrand,
   },
   title: {
-    fontSize: 30,
+    fontSize: 20,
     fontWeight: 'bold',
-    color: colors.blackBrand,
+    color: colors.base,
   },
   subHeader: {
     fontSize: 18,
@@ -48,7 +48,7 @@ export const fonts = {
   },
   secondaryBody: {
     fontSize: 12,
-    fontWeight: 'regular',
+    fontWeight: 500,
     color: colors.midGrey,
   },
   placeholder: {
@@ -57,15 +57,15 @@ export const fonts = {
     color: colors.midGrey,
   },
   footnote: {
-    fontSize: 10,
-    fontWeight: 'regular',
+    fontSize: 14,
+    fontWeight: 700,
     color: colors.blackBrand,
   },
   button: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: 'bold',
     textTransform: 'uppercase',
-    color: colors.blackBrand,
+    color: colors.white,
   },
   // Title Icons
   quickActions: {
