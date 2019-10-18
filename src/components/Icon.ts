@@ -4,9 +4,9 @@ import { Icon as lbIcon } from 'native-base';
 import { fonts } from '../styles/fonts';
 
 const Icon = styled(lbIcon)`
-  ${is('tilte')`
-  font-size: ${fonts.quickActions.fontSize}px;
-  color: ${fonts.quickActions.color}
+  ${is('title')`
+    font-size: ${fonts.quickActions.fontSize}px;
+    color: ${fonts.quickActions.color}
   `}
 
   ${is('icon')`

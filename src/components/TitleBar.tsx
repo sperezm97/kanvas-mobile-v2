@@ -22,6 +22,7 @@ const Right = styled(nbRight)`
 
 const Header = styled(NbHeader)`
   background-color: ${colors.white};
+  border-bottom-width: 0;
 `;
 
 interface ItitleBar {
