@@ -27,6 +27,9 @@ const colors = {
   lightGrey: '#B4B4B4',
   midGrey: '#7F7F7F',
   blackBrand: '#5A5A5A',
+  // gmail
+  gmail: '#EF3636',
+  facebook: '#6D7EC5',
 };
 
 export default colors;
