@@ -16,7 +16,7 @@ interface Iinput {
 }
 const Input = ({ value, onChange, onBlur, onSubmit, label }: Iinput) => {
   return (
-    <View>
+    <View input={true}>
       <Text>{label}</Text>
       <Item regular={true}>
         <NbInput
