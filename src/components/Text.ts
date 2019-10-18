@@ -62,7 +62,7 @@ const Text = styled(nbText)`
   ${is('secondaryBody')`
     font-size: ${fonts.secondaryBody.fontSize}px;
     font-weight: ${fonts.secondaryBody.fontWeight};
-    color: ${fonts.secondaryBody.color};
+    color: ${({ color }: Itext) => color || fonts.secondaryBody.color};
     text-align: ${({ align }: Itext) => align || 'center'};
   `}
 

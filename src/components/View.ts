@@ -3,7 +3,7 @@ import is from 'styled-is';
 
 const View = styled.View`
   ${is('input')`
-    margin: 14px 20px;
+    margin: 4px 14px;
   `}
 `;
 

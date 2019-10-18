@@ -1,5 +1,5 @@
-export const WELCOME_SCREEN = 'in.Welcome';
-export const LOGIN_SCREEN = 'in.Login';
-export const REGISTER_SCREEN = 'in.Register';
-export const SIDEMENU_SCREEN = 'in.SideMenu';
-export const HOME_SCREEN = 'in.Home';
+export const WELCOME_SCREEN = 'kn.Welcome';
+export const LOGIN_SCREEN = 'kn.Login';
+export const REGISTER_SCREEN = 'kn.Register';
+export const SIDEMENU_SCREEN = 'kn.SideMenu';
+export const HOME_SCREEN = 'kn.Home';
