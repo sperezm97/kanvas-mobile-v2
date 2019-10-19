@@ -1,5 +1,14 @@
 import styled from 'styled-components/native';
+import is from 'styled-is';
 
-const Image = styled.Image``;
+interface Image {
+  height?: number;
+  width?: number;
+}
+const Image = styled.Image`
+  ${is('logo')`
+    align-self: ${({ align }: Image) => align || 'center'}
+  `}
+`;
 
 export default Image;

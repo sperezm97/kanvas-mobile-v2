@@ -29,6 +29,11 @@ const Button = styled(nbButton)`
     border-width: 2px;
     border-color: ${colors.base};
   `}
+
+  ${is('block', 'disabled')`
+    background-color: ${colors.midBase};
+    border-color: ${colors.base};
+  `}
 `;
 
 export default Button;

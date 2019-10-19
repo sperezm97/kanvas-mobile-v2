@@ -54,7 +54,7 @@ export const fonts = {
   placeholder: {
     fontSize: 12,
     fontWeight: 'italic',
-    color: colors.midGrey,
+    color: colors.lightGrey,
   },
   footnote: {
     fontSize: 14,

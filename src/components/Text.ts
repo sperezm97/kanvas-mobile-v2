@@ -68,7 +68,7 @@ const Text = styled(nbText)`
 
   ${is('placeholder')`
     font-size: ${fonts.placeholder.fontSize}px;
-    font-weight: ${fonts.placeholder.fontWeight};
+    ${({ weight }: Itext) => weight || fonts.placeholder.fontWeight};
     color: ${fonts.placeholder.color};
     text-align: ${({ align }: Itext) => align || 'center'};
   `}

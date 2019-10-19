@@ -25,7 +25,7 @@ const colors = {
   warningYellow: '#F8D053',
   complete: '#48B0F7',
   success: '#10CFBD',
-  lightGrey: '#B4B4B4',
+  lightGrey: '#C2C1C0',
   midGrey: '#7F7F7F',
   blackBrand: '#5A5A5A',
   // gmail
