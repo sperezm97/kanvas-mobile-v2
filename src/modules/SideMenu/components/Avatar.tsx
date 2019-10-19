@@ -1,8 +1,7 @@
 import React from 'react';
-import { View } from './components';
+import { View, Text } from './components';
 import { Thumbnail } from 'native-base';
 import { images } from '@styles';
-import { Text } from '@components';
 
 interface Avatar {
   username?: string;
@@ -11,11 +10,9 @@ interface Avatar {
 
 const Avatar = ({ username, source }: Avatar) => {
   return (
-    <View>
-      <Thumbnail large={true} source={source} />
-      <View>
-        <Text>{username}</Text>
-      </View>
+    <View avatar>
+      <Thumbnail source={source} />
+      <Text avatar>{username}</Text>
     </View>
   );
 };

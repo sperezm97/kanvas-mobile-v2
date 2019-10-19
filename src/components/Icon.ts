@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import is from 'styled-is';
 import { Icon as lbIcon } from 'native-base';
-import { fonts } from '../styles/fonts';
+import { fonts, colors } from '@styles';
 
 const Icon = styled(lbIcon)`
   ${is('title')`
@@ -10,7 +10,8 @@ const Icon = styled(lbIcon)`
   `}
 
   ${is('listItem')`
-    font-size: 22px
+    font-size: 22px;
+    color: ${colors.base}
   `}
 `;
 export default Icon;

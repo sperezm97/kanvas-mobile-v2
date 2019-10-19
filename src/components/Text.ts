@@ -98,10 +98,9 @@ const Text = styled(nbText)`
   `}
 
   ${is('listItem')`
-  font-size: ${fonts.body.fontSize};
-
-  color: ${colors.blackBrand};
-padding-left: 8Pipx
+    font-size: ${fonts.body.fontSize};
+    color: ${colors.blackBrand};
+    padding-left 8px;
   `}
 `;
 export default Text;

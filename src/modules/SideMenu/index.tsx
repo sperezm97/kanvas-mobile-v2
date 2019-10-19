@@ -16,7 +16,7 @@ const SideMenu = () => {
     {
       id: 2,
       rowName: 'Prueba',
-      iconName: '',
+      iconName: 'ios-square-outline',
     },
     {
       id: 3,
@@ -35,8 +35,9 @@ const SideMenu = () => {
   return (
     <Container>
       <Content
-        padder={true}
         contentContainerStyle={{
+          flex: 1,
+          flexDirection: 'column',
           justifyContent: 'space-between',
         }}
       >
@@ -44,7 +45,7 @@ const SideMenu = () => {
           <Avatar />
           <View>{data.map(renderItem)}</View>
         </View>
-        <View>
+        <View logo>
           <Text title={true}>canvas</Text>
         </View>
       </Content>
