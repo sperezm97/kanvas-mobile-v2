@@ -16,6 +16,7 @@ const colors = {
   whiteDisable: 'rgba(255, 255, 255, 0.3)',
 
   // Brand Colors
+  light: '#F0FEFF',
   lightBase: '#F0FEFF',
   midBase: '#AAE6E2',
   base: '#61C2CC',

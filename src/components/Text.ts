@@ -83,7 +83,7 @@ const Text = styled(nbText)`
   ${is('button')`
     font-size: ${fonts.button.fontSize}px;
     font-weight: ${fonts.button.fontWeight};
-    color: ${fonts.button.color};
+    color: ${({ color }: Itext) => color || fonts.button.color};
     text-align: ${({ align }: Itext) => align || 'center'};
   `}
   ${is('input')`

@@ -9,7 +9,7 @@ interface Ibutton {
 
 const Button = styled(nbButton)`
   max-height: 48px;
-  background-color: ${colors.base};
+  background-color: ${({ color }: Ibutton) => color || colors.base};
 
   ${is('gmail')`
     width: 155px;
@@ -18,10 +18,16 @@ const Button = styled(nbButton)`
     border-color: ${colors.gmail};
     justify-content: center
   `}
+
   ${is('facebook')`
     width: 155px;
     background-color: ${colors.facebook};
     justify-content: center
+  `}
+
+  ${is('block', 'bordered')`
+    border-width: 2px;
+    border-color: ${colors.base};
   `}
 `;
 
