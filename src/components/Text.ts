@@ -91,10 +91,17 @@ const Text = styled(nbText)`
     color: ${colors.base};
     padding-bottom: 4px;
   `}
+
   ${is('gmail')`
   font-weight: bold;
   color: ${colors.gmail};
   `}
 
+  ${is('listItem')`
+  font-size: ${fonts.body.fontSize};
+
+  color: ${colors.blackBrand};
+padding-left: 8Pipx
+  `}
 `;
 export default Text;

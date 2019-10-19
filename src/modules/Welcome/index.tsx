@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { TitleBar, Text, Image, Button } from '@components';
 import { Container, Content } from 'native-base';
-import { globalStyles, deviceWidth, images } from '@styles';
+import { globalStyles, deviceWidth, images, colors } from '@styles';
 import Carousel, { Pagination } from 'react-native-snap-carousel';
 import { View } from './components';
-import { colors } from '../../styles';
 
 const Welcome = () => {
   const [selectedItem, setSelectedItem] = useState(0);

@@ -10,7 +10,7 @@ Navigation.events().registerAppLaunchedListener(() => {
   Navigation.setRoot({
     root: {
       component: {
-        name: screenNames.WELCOME_SCREEN,
+        name: screenNames.SIDEMENU_SCREEN,
       },
     },
   });

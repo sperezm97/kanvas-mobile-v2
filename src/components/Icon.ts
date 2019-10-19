@@ -9,9 +9,8 @@ const Icon = styled(lbIcon)`
     color: ${fonts.quickActions.color}
   `}
 
-  ${is('icon')`
-    font-size: ${fonts.icon.fontSize}px;
-    color: ${fonts.icon.color}
+  ${is('listItem')`
+    font-size: 22px
   `}
 `;
 export default Icon;
