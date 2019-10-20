@@ -21,7 +21,7 @@ const Right = styled(nbRight)`
 `;
 
 const Header = styled(NbHeader)`
-  background-color: ${colors.white};
+  background-color: ${({ color }: { color?: string }) => color || colors.white};
   border-bottom-width: 0;
 `;
 
@@ -32,6 +32,7 @@ interface ItitleBar {
   barStyle?: 'light-content' | 'dark-content';
   noShadow?: boolean;
   transparent?: boolean;
+  color?: string;
 }
 const TitleBar = ({
   right,
@@ -40,9 +41,11 @@ const TitleBar = ({
   barStyle,
   noShadow,
   transparent,
+  color,
 }: ItitleBar) => {
   return (
     <Header
+      color={color}
       transparent={transparent}
       iosBarStyle={barStyle}
       androidStatusBarColor={barStyle}

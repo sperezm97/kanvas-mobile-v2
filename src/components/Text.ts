@@ -27,7 +27,7 @@ const Text = styled(nbText)`
   ${is('title')`
     font-size: ${fonts.title.fontSize}px;
     font-weight: ${fonts.title.fontWeight};
-    color: ${fonts.title.color};
+    color: ${({ color }: Itext) => color || fonts.title.color};
     text-align: ${({ align }: Itext) => align || 'center'};
   `}
 
@@ -99,8 +99,11 @@ const Text = styled(nbText)`
 
   ${is('listItem')`
     font-size: ${fonts.body.fontSize};
-    color: ${colors.blackBrand};
-    padding-left 8px;
+    font-weight: 700;
+    color: ${colors.base};
+    padding-left: 8px;
+    padding-Right: 8px;
+
   `}
 `;
 export default Text;

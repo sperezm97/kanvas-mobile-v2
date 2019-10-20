@@ -28,4 +28,7 @@ export default function registerScreens(): void {
   Navigation.registerComponent(screenNames.FORGOT_SCREEN, () =>
     enchanter(screen.ForgotPassword),
   );
+  Navigation.registerComponent(screenNames.SETTINGS_SCREEN, () =>
+    enchanter(screen.Settings),
+  );
 }

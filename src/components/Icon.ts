@@ -6,12 +6,15 @@ import { fonts, colors } from '@styles';
 const Icon = styled(lbIcon)`
   ${is('title')`
     font-size: ${fonts.quickActions.fontSize}px;
-    color: ${fonts.quickActions.color}
+    color: ${({ color }: { color?: string }) =>
+      color || fonts.quickActions.color}
+    padding-left: 8px;
   `}
 
   ${is('listItem')`
-    font-size: 22px;
-    color: ${colors.base}
+    font-size: 18px;
+    color: ${colors.base};
+    margin-right: 8px;
   `}
 `;
 export default Icon;
