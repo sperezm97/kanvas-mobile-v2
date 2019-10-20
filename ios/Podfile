@@ -35,8 +35,6 @@ target 'Kanvas' do
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
   
-  pod 'react-native-netinfo', :path => '../node_modules/@react-native-community/netinfo'
-
   target 'KanvasTests' do
     inherit! :search_paths
     # Pods for testing
