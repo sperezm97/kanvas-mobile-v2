@@ -1,10 +1,8 @@
 import React from 'react';
 import { Container, Content, Switch } from 'native-base';
-import { TitleBar, Icon, Text } from '@components';
+import { TitleBar, Icon, Text, ListItem, Button } from '@components';
 import { Separator } from './components';
 import { colors } from '@styles';
-import { ListItem } from './components/ListItem';
-import { Button } from '../../components';
 
 const Settings = () => {
   return (

@@ -5,3 +5,4 @@ export const SIDEMENU_SCREEN = 'kn.SideMenu';
 export const HOME_SCREEN = 'kn.Home';
 export const FORGOT_SCREEN = 'kn.ForgotPassword';
 export const SETTINGS_SCREEN = 'kn.Settings';
+export const PROFILE_SCREEN = 'kn.Profile';

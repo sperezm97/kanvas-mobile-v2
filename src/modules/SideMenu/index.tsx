@@ -12,21 +12,25 @@ const SideMenu = () => {
       id: 1,
       rowName: 'Home',
       iconName: 'ios-home',
+      rowIconType: 'Ionicons',
     },
     {
       id: 2,
       rowName: 'Prueba',
-      iconName: 'ios-square-outline',
+      iconName: 'users',
+      rowIconType: 'FontAwesome',
     },
     {
       id: 3,
       rowName: 'Settings',
       iconName: 'ios-settings',
+      rowIconType: 'Ionicons',
     },
     {
       id: 4,
       rowName: 'Sign Out',
       iconName: 'ios-log-out',
+      rowIconType: 'Ionicons',
     },
   ];
 

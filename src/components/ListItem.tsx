@@ -1,11 +1,25 @@
 import React from 'react';
 import { ListItem as NbListItem, Left, Body, Right } from 'native-base';
-import { Text, Icon } from '@components';
+import { Text, Icon } from '.';
 
 interface ListItem {
   rowIconName: string;
   rowName: string;
-  rowIconType: string;
+  rowIconType:
+    | 'AntDesign'
+    | 'Entypo'
+    | 'EvilIcons'
+    | 'Feather'
+    | 'FontAwesome'
+    | 'FontAwesome5'
+    | 'Foundation'
+    | 'Ionicons'
+    | 'MaterialCommunityIcons'
+    | 'MaterialIcons'
+    | 'Octicons'
+    | 'SimpleLineIcons'
+    | 'Zocial'
+    | undefined;
   rightRow?: React.Component | JSX.Element | React.FunctionComponent;
 }
 const listItem = {
@@ -13,7 +27,7 @@ const listItem = {
   marginRight: 8,
 };
 
-export const ListItem = ({
+const ListItem = ({
   rowIconName,
   rowName,
   rightRow,
@@ -31,3 +45,4 @@ export const ListItem = ({
     </NbListItem>
   );
 };
+export default ListItem;
