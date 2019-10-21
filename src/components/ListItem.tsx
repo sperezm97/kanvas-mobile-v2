@@ -28,20 +28,20 @@ const listItem = {
 };
 
 const ListItem = ({
+  rowIconType,
   rowIconName,
   rowName,
   rightRow,
-  rowIconType,
 }: ListItem) => {
   return (
     <NbListItem noIndent style={listItem}>
       <Left>
         <Icon listItem name={rowIconName} type={rowIconType} />
         <Body>
-          <Text>{rowName}</Text>
+          <Text listItem>{rowName}</Text>
         </Body>
       </Left>
-      <Right>{rightRow}</Right>
+      {rightRow && <Right>{rightRow}</Right>}
     </NbListItem>
   );
 };

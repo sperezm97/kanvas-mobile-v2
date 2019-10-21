@@ -86,6 +86,7 @@ const Text = styled(nbText)`
     color: ${({ color }: Itext) => color || fonts.button.color};
     text-align: ${({ align }: Itext) => align || 'center'};
   `}
+
   ${is('input')`
     font-size: ${sizes.body}px;
     color: ${colors.base};
@@ -93,16 +94,14 @@ const Text = styled(nbText)`
   `}
 
   ${is('gmail')`
-  font-weight: bold;
-  color: ${colors.gmail};
+    font-weight: bold;
+    color: ${colors.gmail};
   `}
 
   ${is('listItem')`
     font-size: ${fonts.body.fontSize};
-    font-weight: 700;
-    color: ${colors.base};
-    padding-left: 8px;
-    padding-Right: 8px;
+    font-weight: 400;
+    color: ${colors.blackBrand};
 
   `}
 `;

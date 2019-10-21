@@ -14,7 +14,11 @@ const Icon = styled(lbIcon)`
   ${is('listItem')`
     font-size: 18px;
     color: ${colors.base};
-    margin-right: 8px;
+  `}
+
+  ${is('button')`
+    font-size: 16px;
+    color: ${({ color }: { color?: string }) => color || colors.base}
   `}
 `;
 export default Icon;

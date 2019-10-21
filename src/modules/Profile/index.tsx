@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Content, Thumbnail } from 'native-base';
-import { TitleBar, Text, Icon, Button } from '@components';
-import { View } from './components';
+import { TitleBar, Icon, Button, ListItem } from '@components';
+import { View, Text } from './components';
 import { colors, images } from '@styles';
 
 const Profile = () => {
@@ -16,16 +16,33 @@ const Profile = () => {
         }
       />
       <Content>
-        <View>
+        <View avatar>
           <Thumbnail large source={images.avatar} />
         </View>
-        <View>
+        <View button>
           <Button normal rounded iconRight>
             <Text button uppercase>
               Edit
             </Text>
-            <Icon button name="edit" type="MaterialIcons" />
+            <Icon
+              button
+              name="edit"
+              type="MaterialIcons"
+              color={colors.white}
+            />
           </Button>
+        </View>
+        <View>
+          <ListItem
+            rowIconType="FontAwesome"
+            rowIconName="user"
+            rowName="Joanne Doe"
+          />
+          <ListItem
+            rowIconType="Ionicons"
+            rowIconName="md-mail"
+            rowName="joanne.doe@mail.com"
+          />
         </View>
       </Content>
     </Container>

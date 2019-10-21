@@ -31,8 +31,9 @@ const Button: React.ElementType = styled(nbButton)`
 
   ${is('normal')``}
     width: 135px;
-    height: 35px;
+    height: 25px;
     background-color: ${colors.base};
+    justify-content: center;
 
   `;
 
