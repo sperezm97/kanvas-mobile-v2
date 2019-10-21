@@ -34,4 +34,7 @@ export default function registerScreens(): void {
   Navigation.registerComponent(screenNames.PROFILE_SCREEN, () =>
     enchanter(screen.Profile),
   );
+  Navigation.registerComponent(screenNames.EDIT_PASSWORD_SCREEN, () =>
+    enchanter(screen.EditPassword),
+  );
 }

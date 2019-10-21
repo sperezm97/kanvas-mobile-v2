@@ -10,7 +10,7 @@ Navigation.events().registerAppLaunchedListener(() => {
   Navigation.setRoot({
     root: {
       component: {
-        name: screenNames.PROFILE_SCREEN,
+        name: screenNames.EDIT_PASSWORD_SCREEN,
       },
     },
   });

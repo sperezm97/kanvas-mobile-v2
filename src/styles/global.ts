@@ -22,5 +22,11 @@ const globalStyles = {
       backgroundColor: colors.midBase,
     },
   },
+  contentBottom: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    margin: 12,
+  },
 };
 export default globalStyles;

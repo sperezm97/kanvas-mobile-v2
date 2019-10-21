@@ -6,6 +6,7 @@ import SideMenu from './SideMenu';
 import ForgotPassword from './ForgotPassword';
 import Settings from './Settings';
 import Profile from './Profile';
+import EditPassword from './EditPassword';
 
 export {
   Home,
@@ -16,4 +17,5 @@ export {
   ForgotPassword,
   Settings,
   Profile,
+  EditPassword,
 };

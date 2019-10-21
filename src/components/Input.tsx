@@ -21,6 +21,7 @@ interface Iinput {
   label: string;
   useRef: () => void;
   onFocus: () => void;
+  password?: boolean;
 }
 const Input = ({
   value,
@@ -30,12 +31,14 @@ const Input = ({
   label,
   useRef,
   onFocus,
+  password,
 }: Iinput) => {
   return (
     <View input={true}>
       <Text input={true}>{label}</Text>
       <Item regular={true}>
         <NbInput
+          secureTextEntry={password}
           ref={useRef}
           value={value}
           autoCapitalize="sentences"

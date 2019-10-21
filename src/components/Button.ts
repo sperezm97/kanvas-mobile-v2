@@ -4,7 +4,9 @@ import { colors } from '../styles';
 import is from 'styled-is';
 
 const Button: React.ElementType = styled(nbButton)`
-  max-height: 48px;
+  height: 48px;
+  width: 155px;
+
   ${is('gmail')`
     width: 155px;
     background-color: ${colors.white};
@@ -29,11 +31,22 @@ const Button: React.ElementType = styled(nbButton)`
     border-color: ${colors.base};
   `}
 
-  ${is('normal')``}
+  ${is('normal')`
     width: 135px;
     height: 25px;
     background-color: ${colors.base};
     justify-content: center;
+  `}
+
+  ${is('bordered')`
+    justify-content: center;
+    border: 2px ${colors.base}
+  `}
+
+  ${is('regular')`
+    justify-content: center;
+    background-color: ${colors.base};
+  `}
 
   `;
 
