@@ -102,7 +102,6 @@ const Text = styled(nbText)`
     font-size: ${fonts.body.fontSize};
     font-weight: 400;
     color: ${colors.blackBrand};
-
   `}
 `;
 export default Text;
