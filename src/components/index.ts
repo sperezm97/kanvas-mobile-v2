@@ -10,6 +10,7 @@ import RowItem from './RowItem';
 import PostItem from './PostItem';
 import CardItem from './CardItem';
 import List from './List';
+import SearchBar from './SearchBar';
 
 export {
   Button,
@@ -24,4 +25,5 @@ export {
   PostItem,
   CardItem,
   List,
+  SearchBar,
 };

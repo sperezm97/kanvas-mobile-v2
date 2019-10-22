@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import is from 'styled-is';
+import { colors } from '@styles';
 
 const View = styled.View`
   ${is('input')`
@@ -11,8 +12,14 @@ const View = styled.View`
   `}
 
   ${is('footer')`
-    ustify-content: center
+    justify-content: center
   `}
+
+  ${is('separator')`
+    border-width: 0.5px;
+    border-color: ${colors.lightGrey}
+    margin: 5px 0;
+`}
 `;
 
 export default View;

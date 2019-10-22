@@ -1,9 +1,8 @@
 import React from 'react';
 import { Item as NbItem, Input as NbInput } from 'native-base';
 import styled from 'styled-components';
-import View from './View';
-import Text from './Text';
-import { colors } from '../styles';
+import { View, Text } from '@components';
+import { colors } from '@styles';
 
 const Item = styled(NbItem)`
   max-height: 40px;
@@ -34,19 +33,19 @@ const Input = ({
   password,
 }: Iinput) => {
   return (
-    <View input={true}>
-      <Text input={true}>{label}</Text>
-      <Item regular={true}>
+    <View input>
+      <Text input>{label}</Text>
+      <Item regular>
         <NbInput
           secureTextEntry={password}
           ref={useRef}
           value={value}
           autoCapitalize="sentences"
-          autoCorrect={false}
-          autoFocus={false}
-          blurOnSubmit={true}
-          caretHidden={false}
-          contextMenuHidden={false}
+          autoCorrect
+          autoFocus
+          blurOnSubmit
+          caretHidden
+          contextMenuHidden
           keyboardType="default"
           maxLength={120}
           onBlur={onBlur}

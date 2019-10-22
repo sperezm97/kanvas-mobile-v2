@@ -20,5 +20,14 @@ const Icon = styled(lbIcon)`
     font-size: 16px;
     color: ${({ color }: { color?: string }) => color || colors.base}
   `}
+
+  ${is('searchBar')`
+    font-size: 30px
+    color: ${({ color }: { color?: string }) => color || colors.white}
+    align-self: center;
+    margin: 0 8px 0 8px;
+
+  `}
+
 `;
 export default Icon;

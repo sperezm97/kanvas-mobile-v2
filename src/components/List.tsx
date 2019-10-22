@@ -1,7 +1,7 @@
 import React from 'react';
 import { FlatList } from 'react-native';
 import { Spinner } from 'native-base';
-import { View, Text } from './index';
+import { View, Text } from '@components';
 import { colors } from '../styles';
 
 interface ListConfig {
@@ -39,6 +39,8 @@ const List = ({
     return <View />;
   };
 
+  const separator = () => <View separator />;
+
   return (
     <FlatList
       data={data}
@@ -52,6 +54,7 @@ const List = ({
       ListEmptyComponent={empty}
       ListFooterComponent={loader}
       ListHeaderComponent={loader}
+      ItemSeparatorComponent={separator}
     />
   );
 };
