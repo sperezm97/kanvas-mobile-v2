@@ -1,8 +1,40 @@
 import { Navigation } from 'react-native-navigation';
-import Home from '@modules/Home';
-import * as screens from './screenNames';
-import withProvider from '@utils/hoc/withProvider';
+import { compose } from 'redux';
+import * as screen from '../../modules';
+import * as screenNames from './screenNames';
+import { withRedux, withNotification, withSafeArea } from '@utils/hoc';
 
+const enchanter = (screen: React.ElementType) =>
+  compose(
+    withRedux,
+    withNotification,
+  )(screen);
 export default function registerScreens(): void {
-  Navigation.registerComponent(screens.HOME_SCREEN, () => withProvider(Home));
+  Navigation.registerComponent(screenNames.HOME_SCREEN, () =>
+    enchanter(screen.Home),
+  );
+  Navigation.registerComponent(screenNames.LOGIN_SCREEN, () =>
+    enchanter(screen.Login),
+  );
+  Navigation.registerComponent(screenNames.REGISTER_SCREEN, () =>
+    enchanter(screen.Register),
+  );
+  Navigation.registerComponent(screenNames.SIDEMENU_SCREEN, () =>
+    enchanter(screen.SideMenu),
+  );
+  Navigation.registerComponent(screenNames.WELCOME_SCREEN, () =>
+    enchanter(screen.Welcome),
+  );
+  Navigation.registerComponent(screenNames.FORGOT_SCREEN, () =>
+    enchanter(screen.ForgotPassword),
+  );
+  Navigation.registerComponent(screenNames.SETTINGS_SCREEN, () =>
+    enchanter(screen.Settings),
+  );
+  Navigation.registerComponent(screenNames.PROFILE_SCREEN, () =>
+    enchanter(screen.Profile),
+  );
+  Navigation.registerComponent(screenNames.EDIT_PASSWORD_SCREEN, () =>
+    enchanter(screen.EditPassword),
+  );
 }

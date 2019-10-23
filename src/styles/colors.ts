@@ -2,7 +2,7 @@
 //                   GLOBAL COLOS                    //
 //////////////////////////////////////////////////////
 
-export const colors = {
+const colors = {
   // global colors
   white: '#fff',
   grey: '#8F8F8F',
@@ -16,6 +16,7 @@ export const colors = {
   whiteDisable: 'rgba(255, 255, 255, 0.3)',
 
   // Brand Colors
+  light: '#F0FEFF',
   lightBase: '#F0FEFF',
   midBase: '#AAE6E2',
   base: '#61C2CC',
@@ -24,7 +25,12 @@ export const colors = {
   warningYellow: '#F8D053',
   complete: '#48B0F7',
   success: '#10CFBD',
-  lightGrey: '#B4B4B4',
+  lightGrey: '#C2C1C0',
   midGrey: '#7F7F7F',
   blackBrand: '#5A5A5A',
+  // gmail
+  gmail: '#EF3636',
+  facebook: '#6D7EC5',
 };
+
+export default colors;
