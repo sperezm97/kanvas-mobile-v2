@@ -8,6 +8,7 @@ import {
 import Icon from './Icon';
 import { colors } from '@styles';
 import styled from 'styled-components';
+import { toggleDrawer } from '../config/navigation/behaviors';
 
 interface ConfigSearchBar {
   value: string;
@@ -24,8 +25,10 @@ const Header = styled(NbHeader)`
 `;
 
 const Input = styled(NbInput)`
-  background-color: ${colors.white};
-  border: 0.5px ${colors.lightGrey};
+  height: 30px;
+  background-color: ${colors.darkBase};
+  color: ${colors.white};
+  border: 0.5px ${colors.white};
   border-radius: 20px;
 `;
 
@@ -40,18 +43,17 @@ const SearchBar = ({
   backgroundColor,
   iconColor,
 }: ConfigSearchBar) => {
-  const onPressMenu = () => {};
-
   const onPressAdd = () => {};
 
   return (
     <Header searchBar rounded noShadow color={backgroundColor}>
       <Icon
+        active
         searchBar
         color={iconColor}
         name="md-menu"
         type="Ionicons"
-        onPress={onPressMenu}
+        onPress={() => toggleDrawer()}
       />
       <Item>
         <Input
@@ -67,10 +69,11 @@ const SearchBar = ({
           onBlur={onSubmit}
           onChangeText={onChange}
           onSubmitEditing={onSubmit}
-          selectionColor={colors.base}
+          selectionColor={colors.white}
         />
       </Item>
       <Icon
+        active
         searchBar
         color={iconColor}
         name="md-add"

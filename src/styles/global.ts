@@ -28,5 +28,10 @@ const globalStyles = {
     justifyContent: 'space-between',
     margin: 12,
   },
+  contentSideMenu: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+  },
 };
 export default globalStyles;

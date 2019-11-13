@@ -3,15 +3,16 @@ import { Button as nbButton } from 'native-base';
 import { colors } from '../styles';
 import is from 'styled-is';
 
-const Button: React.ElementType = styled(nbButton)`
-  height: 48px;
-  width: 155px;
+interface ConfigButton {
+  bgColor?: string;
+  bColor?: string;
+}
 
+const Button: React.ElementType = styled(nbButton)`
   ${is('gmail')`
     width: 155px;
     background-color: ${colors.white};
-    border-width: 4px;
-    border-color: ${colors.gmail};
+    border: 2px ${(props: ConfigButton) => props.bColor || colors.gmail};
     justify-content: center
   `}
 
@@ -21,20 +22,24 @@ const Button: React.ElementType = styled(nbButton)`
     justify-content: center
   `}
 
+  ${is('block')`
+    background-color: ${(props: ConfigButton) => props.bgColor || colors.base}
+  `}
+
   ${is('block', 'bordered')`
-    border-width: 2px;
-    border-color: ${colors.base};
+    border: 2px ${(props: ConfigButton) => props.bColor || colors.base};
   `}
 
   ${is('block', 'disabled')`
-    background-color: ${colors.midBase};
+    background-color: ${(props: ConfigButton) =>
+      props.bgColor || colors.whiteDisable}
     border-color: ${colors.base};
   `}
 
   ${is('normal')`
     width: 135px;
     height: 25px;
-    background-color: ${colors.base};
+    background-color: ${(props: ConfigButton) => props.bgColor || colors.base}
     justify-content: center;
   `}
 
@@ -45,7 +50,7 @@ const Button: React.ElementType = styled(nbButton)`
 
   ${is('regular')`
     justify-content: center;
-    background-color: ${colors.base};
+    background-color: ${(props: ConfigButton) => props.bgColor || colors.base}
   `}
 
   `;

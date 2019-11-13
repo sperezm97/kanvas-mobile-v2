@@ -79,7 +79,8 @@
       "check-separator",
       "check-type",
       "check-typecast"
-    ]
+    ],
+    "object-shorthand-properties-first": false
   },
   "rulesDirectory": []
 }

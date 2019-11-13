@@ -8,4 +8,8 @@ export const images = {
   logo: require('../assets/images/logo.png'),
 };
 
-export const icons = {};
+export const icons = {
+  bottomBar: {
+    home: require('../assets/icons/home.png'),
+  },
+};

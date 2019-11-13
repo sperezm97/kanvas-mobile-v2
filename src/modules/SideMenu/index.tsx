@@ -38,13 +38,7 @@ const SideMenu = () => {
 
   return (
     <Container>
-      <Content
-        contentContainerStyle={{
-          flex: 1,
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-        }}
-      >
+      <Content contentContainerStyle={globalStyles.contentSideMenu}>
         <View>
           <Avatar />
           <View>{data.map(renderItem)}</View>

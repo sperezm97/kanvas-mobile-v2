@@ -1,6 +1,10 @@
 import { Navigation, Options } from 'react-native-navigation';
 import * as screeNames from './screenNames';
+import { icons, colors, deviceWidth, deviceHeight } from '@styles';
 
+/**
+ * Auth behavior in kanvas apps
+ */
 export const Auth = () => {
   Navigation.setRoot({
     root: {
@@ -8,8 +12,8 @@ export const Auth = () => {
         children: [
           {
             component: {
-              id: screeNames.HOME_SCREEN,
-              name: screeNames.HOME_SCREEN,
+              id: screeNames.WELCOME_SCREEN,
+              name: screeNames.WELCOME_SCREEN,
             },
           },
         ],
@@ -18,22 +22,61 @@ export const Auth = () => {
   });
 };
 
-export const defaultConfig = () => {
+/**
+ * Principal behavior in kanvas apps
+ */
+export const principal = () => {
+  Navigation.setRoot({
+    root: {
+      sideMenu: {
+        left: {
+          component: {
+            id: screeNames.SIDEMENU_SCREEN,
+            name: screeNames.SIDEMENU_SCREEN,
+          },
+        },
+        center: {
+          bottomTabs: {
+            id: 'Principal',
+            children: [
+              {
+                component: {
+                  id: screeNames.HOME_SCREEN,
+                  name: screeNames.HOME_SCREEN,
+                  options: {
+                    bottomTab: {
+                      icon: icons.bottomBar.home,
+                    },
+                  },
+                },
+              },
+            ],
+            options: {
+              bottomTabs: {
+                backgroundColor: colors.midBase,
+              },
+            },
+          },
+        },
+      },
+    },
+  });
+};
+
+export const defaultConfig = async () => {
   Navigation.setDefaultOptions({
     statusBar: {
+      backgroundColor: colors.base,
+      drawBehind: true,
       visible: true,
       style: 'light', // it can be dark too,
-      hideWithTopBar: false,
-      blur: false,
     },
     layout: {
+      topMargin: (await Navigation.constants()).statusBarHeight,
       direction: 'ltr', // Supported directions are: 'rtl', 'ltr'
       orientation: ['portrait'], // An array of supported orientations ["landscape"]
     },
     popGesture: true,
-    // backgroundImage: null,
-    // rootBackgroundImage: null,
-    modalPresentationStyle: 'overFullScreen', // Supported styles are: 'formSheet', 'pageSheet', 'overFullScreen', 'overCurrentContext', 'currentContext', 'popover', 'fullScreen' and 'none'. On Android, only overCurrentContext and none are supported.
     topBar: {
       visible: false,
     },
@@ -41,27 +84,31 @@ export const defaultConfig = () => {
       visible: true,
       animate: true, // Controls whether BottomTabs visibility changes should be animated
       currentTabIndex: 0,
-      drawBehind: false,
-      // backgroundColor: colors.brandSecondary,
-      barStyle: 'default', // 'black',
+      drawBehind: true,
+      backgroundColor: colors.brandSecondary,
+      barStyle: 'default',
       translucent: false,
       hideShadow: false,
+      titleDisplayMode: 'alwaysShow',
+      elevation: 8,
+    },
+    bottomTab: {
+      iconInsets: { top: 0, left: 0, bottom: 0, right: 0 },
+      iconColor: colors.base,
+      selectedIconColor: colors.darkBase,
+      textColor: colors.base,
+      selectedTextColor: colors.darkBase,
+      fontSize: 12,
+      fontWeight: 'regular',
     },
     sideMenu: {
       left: {
-        shouldStretchDrawer: false, // defaults to true, when false sideMenu contents not stretched when opened past the width
-        // animationVelocity: 2500, // defaults to 840, high number is a faster sideMenu open/close animation
-        // width: deviceWidth * 0.8,
-        // height: deviceHeight * 0.8,
+        width: deviceWidth * 0.6,
+        height: deviceHeight * 0.6,
         visible: false,
         enabled: true,
       },
-      right: {
-        shouldStretchDrawerk: false, // defaults to true, when false sideMenu contents not stretched when opened past the width
-        // animationVelocity: 2500, // defaults to 840, high number is a faster sideMenu open/close animation
-        visible: false,
-        enabled: false,
-      },
+      openGestureMode: 'bezel',
     },
     overlay: {
       interceptTouchOutside: true,
@@ -215,4 +262,16 @@ export function dismissAllModals(mergeOptions?: Options) {
  */
 export function mergeOptions(componentId: string, options?: Options) {
   Navigation.mergeOptions(componentId, options || {});
+}
+/**
+ * Toggling between on or off when you selected a hamburger menu.
+ */
+export function toggleDrawer() {
+  Navigation.mergeOptions(screeNames.SIDEMENU_SCREEN, {
+    sideMenu: {
+      left: {
+        visible: true,
+      },
+    },
+  });
 }

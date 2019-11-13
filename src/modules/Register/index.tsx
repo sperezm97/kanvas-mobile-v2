@@ -4,57 +4,57 @@ import { globalStyles, colors } from '@styles';
 import { View } from './components';
 
 import { Container, Content } from 'native-base';
+import { popScreen } from '../../config/navigation/behaviors';
+import { REGISTER_SCREEN } from '../../config/navigation/screenNames';
 
 const Register = () => {
+  const titleBarLeft = () => (
+    <Icon
+      title
+      name="arrow-back"
+      type="MaterialIcons"
+      onPress={() => popScreen(REGISTER_SCREEN)}
+    />
+  );
+  const titleBody = () => <Text title>canvas</Text>;
+
   return (
     <Container>
-      <TitleBar
-        left={
-          <Icon
-            title={true}
-            name="arrow-back"
-            type="MaterialIcons"
-            onPress={() => {}}
-          />
-        }
-        body={<Text title={true}>canvas</Text>}
-      />
-      <Content
-        padder={true}
-        contentContainerStyle={globalStyles.content}
-        scrollEnabled={true}
-      >
-        <View title={true}>
-          <Text title={true}>Create An Account</Text>
+      <TitleBar left={titleBarLeft()} body={titleBody()} />
+      <Content padder contentContainerStyle={globalStyles.content}>
+        <View title>
+          <Text title>Create An Account</Text>
         </View>
-        <Input label="Name" />
-        <Input label="Last Name" />
-        <Input label="Email" />
-        <Input label="Password" />
-        <Input label="Confirm Password" />
-        <Input label="Company" />
-        <View terms={true}>
-          <Text secondaryBody={true} color={colors.base} numberLines={2}>
+        <View>
+          <Input label="Name" />
+          <Input label="Last Name" />
+          <Input label="Email" />
+          <Input label="Password" />
+          <Input label="Confirm Password" />
+          <Input label="Company" />
+        </View>
+        <View terms>
+          <Text secondaryBody color={colors.base} numberLines={2}>
             By creating an account you agree to our Terms of Service and Privacy
             Policy
           </Text>
         </View>
-        <Button block={true}>
-          <Text uppercase={true} button={true}>
+        <Button block>
+          <Text uppercase button>
             Create Account
           </Text>
         </Button>
-        <View socialText={true}>
-          <Text footnote={true} color={colors.base} weight={400}>
+        <View socialText>
+          <Text footnote color={colors.base} weight={400}>
             Use social logins
           </Text>
         </View>
-        <View social={true}>
-          <Button bordered={true} gmail={true}>
-            <Text gmail={true}>Gmail</Text>
+        <View social>
+          <Button gmail>
+            <Text gmail>Gmail</Text>
           </Button>
-          <Button facebook={true}>
-            <Text button={true}>Facebook</Text>
+          <Button facebook>
+            <Text button>Facebook</Text>
           </Button>
         </View>
       </Content>
